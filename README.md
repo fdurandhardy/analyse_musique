@@ -1,7 +1,6 @@
 # Analyse musicale
-L'idée de ce projet est d'analyser des paroles de chansons interprétées par des artistes de RnB (nous avons récupéré toutes les chansons de 20 des artistes les plus populaires dans le style de musique RnB).  
-Dans un premier temps, nous voulions observer les artistes qui se ressemblaient le plus dans leur parole. La deuxième chose que nous avons voulu tester était de savoir si les paroles des chansons étaient suffisamment caractéristiques pour qu'un modèle statistique puisse leur attribuer un artiste.
-# Auteurs
-* DURAND-HARDY François
-* GARY Gaston
-* ROUGER Léo
+Le but de ce projet est de réaliser un projet simple et naïf sur le text mining. Je voulais revoir les bases de cette discipline et j'ai trouvé l'occasion de le faire en croisant le très intéressant [git de Hugo Nattagh](https://github.com/Hugo-Nattagh/2017-Hip-Hop) qui présentait son travail ce qui m'a donné envie de faire la même chose.
+
+**Dans ce projet, je vais prédire à quel artiste se rapproche le plus le texte d'une chanson.** L'idée étant récréative, j'ai décidé de ne faire cette comparaison que sur 20 des artistes les plus populaires en pop. <br><br>
+
+Pour réaliser ce projet j'ai donc téléchargé un corpus grâce à l'api genius à partir de laquelle j'ai téléchargé les paroles des 20 artistes parmis les plus influents dans la pop. Pour utiliser des algorithmes de machine learning classiques, je suis passé par une vectorisation TF-IDF afin de transformer les mots en une matrice de valeurs numériques. Une fois le corpus vectorisé, j'ai séparé la base de données en 2 : une partie pour l'apprentissage et l'autre pour le test. Le but étant ainsi de créer un modèle ayant des paroles de chanson en entrée et l'artiste vers lequel ces paroles se rapprochent le plus en sortie. Pour cela j'ai entrainé un modèle de classification multinomial naif bayesien avec les données d'apprentissage. Enfin, j'ai fini par évaluer la performance du modèle entrainé avec les données de test.
