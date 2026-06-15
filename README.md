@@ -1,4 +1,4 @@
-# Analyse musicale
+# Classification et stylométrie de paroles de pop
 Le but de ce projet est de réaliser un projet simple et naïf sur le text mining. Je voulais revoir les bases de cette discipline et j'ai trouvé l'occasion de le faire en croisant le très intéressant [git de Hugo Nattagh](https://github.com/Hugo-Nattagh/2017-Hip-Hop) qui présentait son travail ce qui m'a donné envie de faire la même chose.
 
 **Dans ce projet, je vais prédire à quel artiste se rapproche le plus le texte d'une chanson.** L'idée étant récréative, j'ai décidé de ne faire cette comparaison que sur 20 des artistes les plus populaires en pop. <br><br>
